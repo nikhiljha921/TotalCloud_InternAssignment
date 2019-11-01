@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+   <title></title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="script.js"></script>
+
+   <style>
+      #btn1{
+         margin-left: 40%;
+         margin-bottom: 30px;
+         padding: 10px;
+         font-weight: bold;
+      }
+      #btn{
+        
+         margin-bottom: 30px; 
+         padding: 10px 25px;
+         font-weight: bold;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="table-responsive">
+         <h1>Intern Assignment</h1>
+         <h3>Records</h3>
+         <br>
+         <table class="table table-bordered" id="intern_table">
+            <tr>
+               <th>ID</th>
+               <th>Name</th>
+               <th>Start Date</th>
+               <th>Due Date</th>
+            </tr>
+         </table>
+      </div>
+      <h3> Availability Chart</h3>
+      <div id="timeline" style="height: 100%;"></div>
+
+ <input type="button" id="btn1" class="btn btn-info" value="Check Availability" onclick="drawChart(true)"/>
+
+ <input type="button" class="btn btn-primary" id="btn" value="Reload Page" onclick='refreshPage()'/>
+
+   </div>
+</body>
+</html>
